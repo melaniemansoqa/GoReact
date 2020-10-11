@@ -13,7 +13,7 @@ public class DriverController {
 
     public static DriverController instance = new DriverController();
     WebDriver webDriver;
-    private static Logger log = LogManager.getLogger(DriverController.class.getName());
+    private static final Logger log = LogManager.getLogger(DriverController.class.getName());
 
     public void startChrome(String arg){
         if (instance.webDriver != null) return;

@@ -24,7 +24,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverHelpers {
 
-    private int sec = 10;
+    private final int sec = 10;
 
     // method for highlighting a given locator using JavaScript
     public Object wdHighlight(By locator) {

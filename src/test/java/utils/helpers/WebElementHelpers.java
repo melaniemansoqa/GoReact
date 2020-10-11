@@ -1,80 +1,72 @@
 package utils.helpers;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static utils.selenium.Driver.browser;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.JavascriptExecutor;
 import static utils.selenium.Settings.weHighlightedColour;
-/*
-
- helpers
- weWaitForSeconds()         - wait for a specified number of seconds
- weElementIsDisplayed()     - check that a given WebElement is displayed
- weElementToBeClickable()   - check that a given WebElement is clickable
- weHighlightElement()       - highlight a given WebElement using JavaScript
- weClick()                  - wait for a given WebElement to be clickable, highlight and click
- weSendKeys()               - wait for a given text field WebElement to be displayed, clear text, and input String
- weElementIsInvisible()     - wait for a given WebElement to not be visible anymore
- weGetAttribute()           - find a specified attribute of a given element
-
-*/
-
 
 public class WebElementHelpers {
 
-    private int sec = 10;
-
-    // wait for a specified number of seconds
-    public WebDriverWait weWaitForSeconds() {
-        WebDriverWait wait = new WebDriverWait(browser(), sec);
-        return wait;
+    protected WebDriverWait wait;
+    private WebElement element(By by) {
+        return browser().findElement(by);
     }
 
-    // check that a given WebElement is displayed, after waiting the specified amount of time
-    // from the weWaitForSeconds() method
-    public boolean weElementIsDisplayed(WebElement element) {
-        weWaitForSeconds().until(ExpectedConditions.visibilityOf(element));
-        return element.isDisplayed();
+    public String getText (By by) {
+        return element(by).getText();
     }
 
-    // check that a given WebElement is clickable,
-    // after waiting the specified amount of time from the weWaitForSeconds() method
-    public boolean weElementToBeClickable(WebElement element) {
-        weWaitForSeconds().until(ExpectedConditions.elementToBeClickable(element));
-        return element.isEnabled();
+    public void clearText (By by) {
+        if (element(by).getAttribute("value") != null) {
+            element(by).clear();
+        }
     }
 
-    // highlight a given WebElement using JavaScript
-    public void weHighlightElement(WebElement element) {
-        JavascriptExecutor js = (JavascriptExecutor) browser();
-        js.executeScript(weHighlightedColour, element);
+    public void inputText(By by, String text) {
+        clearText(by);
+        element(by).sendKeys(text);
     }
 
-    // wait for a given WebElement to be clickable, highlight the clickable WebElement, and then click the WebElement
-    public void weClick(WebElement element) {
-        weElementToBeClickable(element);
-        weHighlightElement(element);
-        element.click();
+    public void click(By by) {
+        element(by).click();
     }
 
-    // wait for a given text field WebElement to be displayed, clear the text field if necessary
-    // (if ‘clearFirst’ is true), and then input a given String into the text field
-    public void weSendKeys(WebElement element, String text, boolean clearFirst) {
-        weElementIsDisplayed(element);
-        if (clearFirst) weClick(element);
-        element.sendKeys(text);
+    public void waitForElement(By by){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
-    // wait for a given WebElement to not be visible anymore
-    public boolean weElementIsInvisible(WebElement element) {
-        weWaitForSeconds().until(ExpectedConditions.invisibilityOf(element));
-        return !element.isDisplayed();
+    public boolean findAlert(By by, String message) {
+        String alert = element(by).getText();
+        return alert == message;
     }
 
-    // find a specified attribute of a given element
-    public static String weGetAttribute(WebElement element, String attribute) {
-        return element.getAttribute(attribute);
+    protected void clickBackSpace(By by, int count) {
+        for( int i = 0; i < count; i++)
+            element(by).sendKeys(Keys.BACK_SPACE);
     }
 
+    protected void clickEnter(By by) {
+        element(by).sendKeys(Keys.ENTER);
+    }
+
+    public String getString (By by){
+        return element(by).toString();
+    }
+
+    public void sleep (long time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void waitVisibility (By by) {
+        sleep(2000);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+    }
 }

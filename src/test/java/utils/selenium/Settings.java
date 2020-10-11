@@ -5,7 +5,7 @@ package utils.selenium;
 
 public class Settings {
 
-    public static String baseUrl = "https://start.duckduckgo.com/";
+    public static String baseUrl = "https://dev.goreact.com/login";
 
 
     public static String wdHighlightedColour = "arguments[0].style.border='5px solid green";
