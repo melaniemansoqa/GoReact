@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-12T04:21:12 PST" name="Test Suite" finished-at="2020-10-12T04:21:18 PST" duration-ms="5652">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@279ad2e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@57d5872c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2020-10-12T04:21:12 PST" name="1. Login as Instructor" finished-at="2020-10-12T04:21:18 PST" duration-ms="5578">
+      <class name="TestRunner">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:TestRunner@279ad2e3]" started-at="2020-10-12T04:21:12 PST" name="setUpTest" finished-at="2020-10-12T04:21:12 PST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login/LoginStudent.feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@279ad2e3]" started-at="2020-10-12T04:21:12 PST" name="setUpClass" finished-at="2020-10-12T04:21:12 PST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@279ad2e3]" started-at="2020-10-12T04:21:12 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-12T04:21:18 PST" duration-ms="5349" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["01. Validate the title and url of a website"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pages.BasePage.navigateToBaseUrl(BasePage.java:34)
+at steps.BaseSteps.userIsOnTheBasePage(BaseSteps.java:21)
+at ✽.a user is on the base page(file:src/test/java/features/Login/LoginStudent.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@279ad2e3]" started-at="2020-10-12T04:21:18 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-12T04:21:18 PST" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["02. Validate that a student cannot login to web app when using invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pages.BasePage.navigateToBaseUrl(BasePage.java:34)
+at steps.BaseSteps.userIsOnTheBasePage(BaseSteps.java:21)
+at ✽.a user is on the base page(file:src/test/java/features/Login/LoginStudent.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@279ad2e3]" started-at="2020-10-12T04:21:18 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-12T04:21:18 PST" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["03. Validate that a student can login to web app"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pages.BasePage.navigateToBaseUrl(BasePage.java:34)
+at steps.BaseSteps.userIsOnTheBasePage(BaseSteps.java:21)
+at ✽.a user is on the base page(file:src/test/java/features/Login/LoginStudent.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@279ad2e3]" started-at="2020-10-12T04:21:18 PST" name="tearDownClass" finished-at="2020-10-12T04:21:18 PST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner -->
+    </test> <!-- 1. Login as Instructor -->
+    <test started-at="2020-10-12T04:21:18 PST" name="2. Login as Student" finished-at="2020-10-12T04:21:18 PST" duration-ms="51">
+      <class name="TestRunner">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:TestRunner@57d5872c]" started-at="2020-10-12T04:21:18 PST" name="setUpTest" finished-at="2020-10-12T04:21:18 PST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login/LoginStudent.feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@57d5872c]" started-at="2020-10-12T04:21:18 PST" name="setUpClass" finished-at="2020-10-12T04:21:18 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@57d5872c]" started-at="2020-10-12T04:21:18 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-12T04:21:18 PST" duration-ms="12" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["01. Validate the title and url of a website"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pages.BasePage.navigateToBaseUrl(BasePage.java:34)
+at steps.BaseSteps.userIsOnTheBasePage(BaseSteps.java:21)
+at ✽.a user is on the base page(file:src/test/java/features/Login/LoginStudent.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@57d5872c]" started-at="2020-10-12T04:21:18 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-12T04:21:18 PST" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["02. Validate that a student cannot login to web app when using invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pages.BasePage.navigateToBaseUrl(BasePage.java:34)
+at steps.BaseSteps.userIsOnTheBasePage(BaseSteps.java:21)
+at ✽.a user is on the base page(file:src/test/java/features/Login/LoginStudent.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@57d5872c]" started-at="2020-10-12T04:21:18 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-12T04:21:18 PST" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["03. Validate that a student can login to web app"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Student Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pages.BasePage.navigateToBaseUrl(BasePage.java:34)
+at steps.BaseSteps.userIsOnTheBasePage(BaseSteps.java:21)
+at ✽.a user is on the base page(file:src/test/java/features/Login/LoginStudent.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@57d5872c]" started-at="2020-10-12T04:21:18 PST" name="tearDownClass" finished-at="2020-10-12T04:21:18 PST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner -->
+    </test> <!-- 2. Login as Student -->
+  </suite> <!-- Test Suite -->
+</testng-results>

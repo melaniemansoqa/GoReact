@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
+
+    <test name="1. Login as Instructor">
+        <parameter name="feature" value="Login/LoginStudent.feature"/>
+
+        <classes>
+            <class name="TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="2. Login as Student">
+        <parameter name="feature" value="Login/LoginStudent.feature"/>
+        <classes>
+            <class name="TestRunner"/>
+        </classes>
+    </test>
+
+</suite>

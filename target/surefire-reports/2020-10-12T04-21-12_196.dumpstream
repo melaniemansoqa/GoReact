@@ -1,0 +1,15 @@
+# Created at 2020-10-12T04:21:12.811
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2020-10-12T04:21:12.812
+WARNING: Illegal reflective access by TestRunner (file:/Users/melaniediannemanso/IdeaProjects/GoReact/target/test-classes/) to field sun.reflect.annotation.AnnotationInvocationHandler.memberValues
+
+# Created at 2020-10-12T04:21:12.812
+WARNING: Please consider reporting this to the maintainers of TestRunner
+
+# Created at 2020-10-12T04:21:12.812
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2020-10-12T04:21:12.813
+WARNING: All illegal access operations will be denied in a future release
+

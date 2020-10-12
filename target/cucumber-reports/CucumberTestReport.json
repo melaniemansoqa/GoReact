@@ -1,0 +1,301 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-12T12:41:55.501Z",
+        "line": 4,
+        "name": "01. Validate the title and url of a website",
+        "description": "",
+        "id": "student-login;01.-validate-the-title-and-url-of-a-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat pages.BasePage.navigateToBaseUrl(BasePage.java:35)\n\tat steps.BaseSteps.userIsOnTheBasePage(BaseSteps.java:21)\n\tat ✽.a user is on the base page(file:src/test/java/features/Login/LoginStudent.feature:5)\n",
+              "duration": 232445,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "a user is on the base page",
+            "match": {
+              "location": "BaseSteps.userIsOnTheBasePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4252,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "they see the page title contains \"GoReact\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GoReact\"",
+                  "offset": 33
+                }
+              ],
+              "location": "BaseSteps.they_see_the_page_title_contains(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3525,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "they see the page Url contains \"https://dev.goreact.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://dev.goreact.com/login\"",
+                  "offset": 31
+                }
+              ],
+              "location": "BaseSteps.theySeeThePageUrlContains(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Chrome"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-12T12:41:55.503Z",
+        "line": 19,
+        "name": "02. Validate that a student cannot login to web app when using invalid password",
+        "description": "",
+        "id": "student-login;02.-validate-that-a-student-cannot-login-to-web-app-when-using-invalid-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat pages.BasePage.navigateToBaseUrl(BasePage.java:35)\n\tat steps.BaseSteps.userIsOnTheBasePage(BaseSteps.java:21)\n\tat ✽.a user is on the base page(file:src/test/java/features/Login/LoginStudent.feature:10)\n",
+              "duration": 213465,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "a user is on the base page",
+            "match": {
+              "location": "BaseSteps.userIsOnTheBasePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4697,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user inputs \"themelaniemanso+student@gmail.com\" on email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"themelaniemanso+student@gmail.com\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.userInputsEmailOnEmailField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3721,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user inputs \"wrongpassword\" on password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrongpassword\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.userInputsPasswordOnPasswordField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3599,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user clicks Login button",
+            "match": {
+              "location": "LoginSteps.userClicksLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3411,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "a modal appears containing \"Login failed\" as title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login failed\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.aModalAppearsContainingAsTitle(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3529,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "the user clicks close button",
+            "match": {
+              "location": "LoginSteps.theUserClicksCloseButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Chrome"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-12T12:41:55.505Z",
+        "line": 31,
+        "name": "03. Validate that a student can login to web app",
+        "description": "",
+        "id": "student-login;03.-validate-that-a-student-can-login-to-web-app;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat pages.BasePage.navigateToBaseUrl(BasePage.java:35)\n\tat steps.BaseSteps.userIsOnTheBasePage(BaseSteps.java:21)\n\tat ✽.a user is on the base page(file:src/test/java/features/Login/LoginStudent.feature:22)\n",
+              "duration": 315910,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "a user is on the base page",
+            "match": {
+              "location": "BaseSteps.userIsOnTheBasePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4806,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user inputs \"themelaniemanso+student@gmail.com\" on email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"themelaniemanso+student@gmail.com\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.userInputsEmailOnEmailField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10520,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user inputs \"Password**123\" on password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password**123\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.userInputsPasswordOnPasswordField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3946,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user clicks Login button",
+            "match": {
+              "location": "LoginSteps.userClicksLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3660,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "the user is on the dashboard page",
+            "match": {
+              "location": "DashboardSteps.userIsNavigatedToDashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4469,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "they see the page Url contains \"https://dev.goreact.com/dashboard/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://dev.goreact.com/dashboard/\"",
+                  "offset": 31
+                }
+              ],
+              "location": "BaseSteps.theySeeThePageUrlContains(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Chrome"
+          }
+        ]
+      }
+    ],
+    "name": "Student Login",
+    "description": "",
+    "id": "student-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login/LoginStudent.feature",
+    "tags": [
+      {
+        "name": "@Chrome",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
