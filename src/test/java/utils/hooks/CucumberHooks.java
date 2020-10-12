@@ -2,6 +2,7 @@ package utils.hooks;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.testng.annotations.AfterSuite;
 import utils.selenium.DriverController;
 
 //This class file will contain all our Before and After hooks for our Cucumber scenarios,
@@ -29,7 +30,7 @@ public class CucumberHooks {
         DriverController.instance.startFirefox("--headless");
     }
 
-    @After
+    @AfterSuite
     public void stopWebDriver(){
         DriverController.instance.stopWebDriver();
     }

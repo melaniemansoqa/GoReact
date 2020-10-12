@@ -34,8 +34,7 @@
                     <skipTests>false</skipTests>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <suiteXmlFile>${defaultSuiteFiles}</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemPropertyVariables>
                         <extent.reporter.html.start>true</extent.reporter.html.start>
@@ -46,6 +45,7 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
@@ -58,7 +58,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Project-Name</projectName> <!-- Replace with project name -->
+                            <projectName>GoReact</projectName> <!-- Replace with project name -->
                             <outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
                             <cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
                             <parallelTesting>false</parallelTesting>

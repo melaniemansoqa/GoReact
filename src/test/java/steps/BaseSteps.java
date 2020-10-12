@@ -23,6 +23,7 @@ public class BaseSteps extends BasePage  {
 
     @Then("they see the page title contains {string}")
     public void they_see_the_page_title_contains(String expectedTitle)  {
+
         basePage.validatePageTitle(expectedTitle);
     }
 

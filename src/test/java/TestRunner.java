@@ -13,8 +13,8 @@ import java.util.Map;
 
 
 @CucumberOptions(
-        features = "src/test/resources/features",
-        glue = {"util.hooks", "steps"},
+        features = "src/test/java/features",
+        glue = {"steps"},
         //tags = {"~@Ignore"},
         plugin = {"html:target/cucumber-reports/cucumber-pretty",
                 "json:target/cucumber-reports/CucumberTestReport.json",
