@@ -1,4 +1,5 @@
 # GoReact
+By Melanie Dianne
 
 ## Summary
 Automated functionality test for Go React Web App
