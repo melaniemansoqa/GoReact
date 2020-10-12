@@ -19,22 +19,16 @@ This is built using:
 
 ## File Structure
 
- GoReact Project
-    ├── pom.xml
-    ├── ReadME.md
-    ├── src                    
-    │   ├── test      
-    │       ├── resources
-    │           ├── log4j2-test.xml 
-    │           ├── testng.xml
-    │       ├── java  
-    │           ├── features           # A package containing the Cucumber feature files
-    │           ├── pages              # A package containing the methods used 
-    │           ├── steps              # A package containing the Cucumber Step Definition
-    │           ├── utils              # A package containing the classes for drivers, helpers, hooks
-    │           ├── TestRunner  
+    .
+    ├── ...
+    ├── java                    
+    │   ├── features          # A package containing the Cucumber feature files
+    │   ├── pages             # A package containing the methods used 
+    │   ├── steps             # A package containing the Cucumber Step Definition
+    │   ├── utils             # A package containing the classes for drivers, helpers, hooks
+    │   └── ...                 # etc.
     └── ...
-    
+
 
 
 ## Demo Link: 
