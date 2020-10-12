@@ -12,11 +12,6 @@ This is built using:
 * IntelliJ as the IDE
 * Log4J2 as the Java-based logging utility
 
-    
-## How To Run
-
-- Pending / with issues
-
 ## File Structure
 
     .
@@ -30,5 +25,10 @@ This is built using:
     └── ...
 
 
+    
+## How To Run
+
+- Pending / with issues
 
 ## Demo Link: 
+
