@@ -1,21 +1,34 @@
-Go React - Automation Test
-by Melanie Dianne Manso
+# GoReact
 
 ## Summary
 Automated functionality test for Go React Web App
+This is built using: 
 
-## Dependencies
+* Java as the programming language
+* Cucumber as the testing framework
+* TestNG as the assertion framework
+* Maven as the build tool
+* WebDriver as the browser automation tool
+* IntelliJ as the IDE
+* Log4J2 as the Java-based logging utility
 
-- Selenium
-- TestNG
-- Cucumber
+## File Structure
+
+    .
+    ├── ...
+    ├── java                    
+    │   ├── features          # A package containing the Cucumber feature files
+    │   ├── pages             # A package containing the methods used 
+    │   ├── steps             # A package containing the Cucumber Step Definition
+    │   ├── utils             # A package containing the classes for drivers, helpers, hooks
+    │   └── ...                 # etc.
+    └── ...
+
 
     
-## IDE
+## How To Run
 
-- IntelliJ
-    - Plugin 1: Cucumber for Java
-    - Plugin 2: Gherkin
-    
-       
+- Pending / with issues
+
+## Demo Link: 
 
