@@ -18,5 +18,4 @@ Automated functionality test for Go React Web App
     - Plugin 2: Gherkin
     
        
-### Running Tests ###
 
