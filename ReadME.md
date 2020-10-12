@@ -36,8 +36,8 @@ This is built using:
 
 ## Tasks
 
-- Write automation to test signup and login at https://dev.goreact.com/        # Completed
-- Sign up and login as an instructor.                                          # Completed - LoginInstructor.feature
-- Sign up and login as a student.                                              # Completed - LoginStudent.feature
-- Cover both positive and negative test cases.                                 # Completed
-- Keep track of how long you spend on this project.                            # I spent 4 hours on this project. 
+1. Write automation to test signup and login at https://dev.goreact.com/ -------- Completed
+2. Sign up and login as an instructor. ------------------------------------------ Completed - LoginInstructor.feature
+3. Sign up and login as a student.----------------------------------------------- Completed - LoginStudent.feature
+4. Cover both positive and negative test cases.-----------------------------------Completed
+5. Keep track of how long you spend on this project.------------------------------I spent 4 hours on this project. 
