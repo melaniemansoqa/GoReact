@@ -39,4 +39,4 @@ Automated functionality test for Go React Web App. This project is built using:
 2. Sign up and login as an instructor. --------------------------------------------Completed 
 3. Sign up and login as a student.----------------------------------------------- Completed
 4. Cover both positive and negative test cases.----------------------------------Completed
-5. Keep track of how long you spend on this project.-----------------------------I spent 4 hours on this project. 
+5. Keep track of how long you spend on this project.-----------------------------4 Hours
