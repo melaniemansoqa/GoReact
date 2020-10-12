@@ -33,3 +33,11 @@ This is built using:
 
 ## Demo Link: 
 
+
+## Tasks
+
+- Write automation to test signup and login at https://dev.goreact.com/        # Completed
+- Sign up and login as an instructor.                                          # Completed - LoginInstructor.feature
+- Sign up and login as a student.                                              # Completed - LoginStudent.feature
+- Cover both positive and negative test cases.                                 # Completed
+- Keep track of how long you spend on this project.                            # I spent 4 hours on this project. 
