@@ -2,8 +2,7 @@
 By Melanie Dianne
 
 ## Summary
-Automated functionality test for Go React Web App
-This is built using: 
+Automated functionality test for Go React Web App. This project is built using: 
 
 * Java as the programming language
 * Cucumber as the testing framework
