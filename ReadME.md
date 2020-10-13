@@ -35,7 +35,7 @@ Automated functionality test for Go React Web App. This project is built using:
 
 ## Tasks
 
-1. Write automation to test signup and login at https://dev.goreact.com/ -------- Completed
+1. Write automation to test login at https://dev.goreact.com/ -------- Completed
 2. Sign up and login as an instructor. --------------------------------------------Completed 
 3. Sign up and login as a student.----------------------------------------------- Completed
 4. Cover both positive and negative test cases.----------------------------------Completed
